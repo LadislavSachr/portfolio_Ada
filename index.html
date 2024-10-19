@@ -9,39 +9,50 @@
 <body>
     <header>
         <h1>Ada Lovelaca</h1>
-        <nav>
+        <nav class="navigation">
             <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#1">About me</a></li>
+                <li><a href="#2">Projects</a></li>
+                <li><a href="#3">Skills</a></li>
+                <li><a href="index-constact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="about">
-            <h2>About me</h2>
+        <div class="about" id="1">
             <article>
-                <p><span>Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer, chiefly known for my work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.</span>
-                   <span>I am one of the first to recognize that machines have applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine.</span>
-                   <span>In my free time I like to read about scientific developments, mathematics, and computational mathematics. I also like to take my chances of winning big.</span>
+                <h2>About Me</h2>
+                <p><span class="text">Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer, chiefly known for my work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.</span>
+                   <span class="text">I am one of the first to recognize that machines have applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine.</span>
+                   <span class="text">In my free time I like to read about scientific developments, mathematics, and computational mathematics. I also like to take my chances of winning big.</span>
+                   <span class="text" id="counter">Fun fact! this page is live for x days!</span>
                 </p>
             </article>
-            <aside>
-                <p>Fun fact! this page is live for x days!</p>
-            </aside>
+            <img id="ada" src="./resources/images/Ada_portrait.jpg" alt="Portrait of Ada Lovelace">
         </div>
-        <div>
+        <div class="projects" id="2">
             <h2>Projects</h2>
             <nav>
                 <ul>
-                    <li>The first computer program</li>
-                    <li>The Analytical Engine</li>
-                    <li>The Ada programming language</li>
+                    <li id="4c"><a>The first computer program</a></li>
+                    <div class="popup" id="4">
+                        <img src="./resources/images/first.jpg" alt="">
+                        <p>The world's first computer program for computing Bernoulli numbers.</p>
+                    </div>
+                    <li id="5c"><a>The Analytical Engine</a></li>
+                    <div class="popup" id="5">
+                        <img src="./resources/images/engine.webp" alt="">
+                        <p>I helped Charles Babbage on topics ranging from math to computation that helped the development of the Analytical Engine.</p>
+                    </div>
+                    <li id="6c"><a>The Ada programming language</a></li>
+                    <div class="popup" id="6">
+                        <img src="./resources/images/ada.png" alt="">
+                        <p>My work inspired the United States Department of Defense to name their new programming language after me.</p>
+                    </div>
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="skills" id="3">
             <h2>Skills</h2>
             <div class="image-icons">
                 <img src="./resources/images/html.webp" alt="">
@@ -58,8 +69,6 @@
             </div>
         </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src="./resources/port_int.js"></script>
 </body>
 </html>
